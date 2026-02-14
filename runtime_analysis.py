@@ -40,6 +40,5 @@ def runtime(algorithm, size):
 runtime("sequence_alignment.py", 500)
 runtime("sequence_alignment.py", 1000)
 runtime("sequence_alignment.py", 2000)
-runtime("sequence_alignment.py", 3000)
 runtime("sequence_alignment.py", 4000)
 runtime("sequence_alignment.py", 5000)
