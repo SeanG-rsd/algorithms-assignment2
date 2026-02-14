@@ -40,6 +40,24 @@ seq2 = ""
 # defining memoization for dynamic programming
 memo = {}
 
+
+def align_seq_tabulation():
+    dp = [[0 for _ in range(len(seq1) + 1)] for _ in range(len(seq2) + 1)]
+
+
+    for i in range(1, len(seq1) + 1):
+        c1 = seq1[i]
+        for j in range(1, len(seq2) + 1):
+            c2 = seq2[j]
+            align_cost = dp[i-1][j-1] + cost_matrix[cost_dict[c1]][cost_dict[c2]]
+
+            insert_cost = dp[i-1][j] + cost_matrix[cost_dict[c1]][0]
+            
+            delete_cost = dp[i, j-1] + cost_matrix[cost_dict[c2]][0]
+
+            dp[i][j] = min (align_cost, insert_cost, delete_cost)
+
+
 def sequence_align(i, j) -> int:
     cost = 0
     # end of both sequences
