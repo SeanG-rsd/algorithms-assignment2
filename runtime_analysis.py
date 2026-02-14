@@ -1,14 +1,8 @@
-import pytest
-import os
 import sys
 import time
-import numpy as np
 from pathlib import Path
 import subprocess
-import glob
 import random
-# print(sys.getrecursionlimit())
-sys.setrecursionlimit(6000)
 
 cost_dict = ['A', 'T', 'G', 'C']
 

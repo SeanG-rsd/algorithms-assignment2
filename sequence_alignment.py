@@ -1,5 +1,3 @@
-import sys
-sys.setrecursionlimit(6000)
 # defining cost matrix
 cost_matrix = [[], [], [], [], []]
 cost_dict = {
