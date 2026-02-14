@@ -25,7 +25,7 @@ with open("./imp2cost.txt", "r") as file:
         idx += 1
 
 # reading inputs
-with open("./runtime_test_input.txt", "r") as file:
+with open("./imp2input.txt", "r") as file:
     i = 0
     for line in file:
         inputSeq.append(line.strip('\n').split(','))
